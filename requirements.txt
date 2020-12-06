@@ -1,0 +1,9 @@
+matplotlib
+streamlit==0.70.0
+seaborn
+sklearn
+xgboost
+lightgbm
+folium
+streamlit_folium
+bs4
