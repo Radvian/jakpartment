@@ -45,7 +45,7 @@ import base64
 def main():
     pd.set_option('display.max_colwidth', None)
     ### Dataset Import and Dashboard DataFrame Preparation (renaming columns for aesthetic purposes)
-    cleaned = pd.read_csv('Web Scraping and Dataset\Cleaned Apartment Data.csv')
+    cleaned = pd.read_csv('Web Scraping and Dataset\\Cleaned Apartment Data.csv')
 
     UnitType = list()
     for _ in cleaned.No_Rooms:
@@ -104,7 +104,7 @@ def main():
     pages = st.sidebar.radio("Pages", ("Home Page", "Apartment Rent Price Calculator", "Web Scraping Demo", 
     "Data Visualization", "Play with Machine Learning Models", "Summary", "FAQs", "About the Author"), index = 0)
     if pages == "Home Page":
-                
+
         st.title('Welcome to the Jakpartment Project!')
         st.image('images\\apartment.jpg', width = 650)
         st.write("Open the navigation sidebar and select any pages to proceed. Happy exploring!")
